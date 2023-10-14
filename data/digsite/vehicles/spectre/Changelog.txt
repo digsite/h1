@@ -1,0 +1,4 @@
+
+Notes:
+01_x is provided as is.
+00_e3 was reworked from 01_x with as much e3 2000 and xbox stats preserved as possible.

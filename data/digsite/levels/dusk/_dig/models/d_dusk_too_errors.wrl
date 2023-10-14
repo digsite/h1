@@ -1,0 +1,44 @@
+#VRML V1.0 ascii
+
+Separator
+{
+	Coordinate3 { point[77.254227 500.528259 64.999992, -77.254272 500.528259 64.999992, 67.254227 500.528259 49.999996] }
+	MaterialBinding { value PER_FACE }
+	Material { diffuseColor[0.000000 1.000000 1.000000] transparency[0.000000] }
+	IndexedFaceSet { coordIndex[0,1,2,-1] }
+}
+Separator
+{
+	Coordinate3 { point[-77.254272 500.528259 64.999992, -67.254272 500.528259 49.999996, 67.254227 500.528259 49.999996] }
+	MaterialBinding { value PER_FACE }
+	Material { diffuseColor[0.000000 1.000000 1.000000] transparency[0.000000] }
+	IndexedFaceSet { coordIndex[0,1,2,-1] }
+}
+Separator
+{
+	Coordinate3 { point[445.887543 566.013000 204.999969, 264.503326 364.057587 204.999969, 400.523468 598.971863 204.999969] }
+	MaterialBinding { value PER_FACE }
+	Material { diffuseColor[0.000000 1.000000 1.000000] transparency[0.000000] }
+	IndexedFaceSet { coordIndex[0,1,2,-1] }
+}
+Separator
+{
+	Coordinate3 { point[492.682098 742.830139 204.999969, 562.423096 774.109009 204.999969, 554.226318 698.115662 204.999969] }
+	MaterialBinding { value PER_FACE }
+	Material { diffuseColor[0.000000 1.000000 1.000000] transparency[0.000000] }
+	IndexedFaceSet { coordIndex[0,1,2,-1] }
+}
+Separator
+{
+	Coordinate3 { point[398.311157 612.939880 204.999969, 459.855560 568.225281 204.999969, 445.887543 566.013000 204.999969] }
+	MaterialBinding { value PER_FACE }
+	Material { diffuseColor[0.000000 1.000000 1.000000] transparency[0.000000] }
+	IndexedFaceSet { coordIndex[0,1,2,-1] }
+}
+Separator
+{
+	Coordinate3 { point[445.887543 566.013000 204.999969, 400.523468 598.971863 204.999969, 398.311157 612.939880 204.999969] }
+	MaterialBinding { value PER_FACE }
+	Material { diffuseColor[0.000000 1.000000 1.000000] transparency[0.000000] }
+	IndexedFaceSet { coordIndex[0,1,2,-1] }
+}

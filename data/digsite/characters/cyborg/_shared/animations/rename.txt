@@ -1,0 +1,395 @@
+W-driver unarmed airborne=stand unarmed airborne
+W-driver unarmed land-soft=stand missile land-soft
+W-driver unarmed land-hard=stand missile land-hard
+W-driver unarmed throw-grenade=stand rifle throw-grenade
+W-driver unarmed melee=stand rifle melee
+
+W-gunner fixed airborne=stand unarmed airborne
+W-gunner fixed land-soft=stand missile land-soft
+W-gunner fixed land-hard=stand missile land-hard
+W-gunner fixed throw-grenade=stand rifle throw-grenade
+W-gunner fixed melee=stand rifle melee
+
+W-passenger rifle airborne=stand unarmed airborne
+W-passenger rifle land-soft=stand missile land-soft
+W-passenger rifle land-hard=stand missile land-hard
+W-passenger rifle throw-grenade=stand rifle throw-grenade
+W-passenger rifle melee=stand rifle melee
+W-passenger rifle ar reload-1=stand rifle ar reload-1
+W-passenger rifle ar fire-1=stand rifle ar fire-1
+W-passenger rifle sg reload-1=stand rifle sg reload-1
+W-passenger rifle sg fire-1=stand rifle sg fire-1
+W-passenger rifle sr reload-1=stand rifle sr reload-1
+W-passenger rifle sr fire-1=stand rifle ar fire-1
+W-passenger rifle pr fire-1=stand rifle ar fire-1
+W-passenger rifle 99ar reload-1=stand rifle 99ar reload-1
+W-passenger rifle 99ar fire-1=stand rifle ar fire-1
+W-passenger rifle 99smg fire-1=stand rifle ar fire-1
+W-passenger rifle 99spg fire-1=stand rifle ar fire-1
+W-passenger rifle 99sr reload-1=stand rifle 99sr reload-1
+W-passenger rifle 99sr fire-1=stand rifle ar fire-1
+
+W-passenger pistol airborne=stand unarmed airborne
+W-passenger pistol land-soft=stand missile land-soft
+W-passenger pistol land-hard=stand missile land-hard
+W-passenger pistol melee=stand rifle melee
+W-passenger pistol hp reload-1=stand pistol hp reload-1
+W-passenger pistol hp fire-1=stand pistol hp fire-1
+W-passenger pistol pp fire-1=stand pistol hp fire-1
+W-passenger pistol ne reload-1=stand pistol ne reload-1
+W-passenger pistol ne fire-1=stand pistol hp fire-1
+W-passenger pistol 99hp fire-1=stand pistol hp fire-1
+
+W-passenger missile airborne=stand unarmed airborne
+W-passenger missile land-soft=stand missile land-soft
+W-passenger missile land-hard=stand missile land-hard
+W-passenger missile melee=stand rifle melee
+W-passenger missile rl reload-1=stand missile rl reload-1
+W-passenger missile rl fire-1=stand missile rl fire-1
+W-passenger missile pc reload-1=stand missile rl reload-1
+W-passenger missile pc fire-1=stand missile rl fire-1
+W-passenger missile 99fc fire-1=stand missile rl fire-1
+W-passenger missile 99rl fire-1=stand missile rl fire-1
+W-passenger missile 99ml fire-1=stand missile rl fire-1
+
+crouch rifle throw-grenade=stand rifle throw-grenade
+crouch rifle melee=stand rifle melee
+crouch rifle ar reload-1=stand rifle ar reload-1
+crouch rifle ar fire-1=stand rifle ar fire-1
+crouch rifle ar melee=stand rifle ar melee
+crouch rifle sg melee=stand rifle sg melee
+crouch rifle sr reload-1=stand rifle sr reload-1
+crouch rifle sr melee=stand rifle sr melee
+crouch rifle pr fire-1=stand rifle ar fire-1
+crouch rifle pr melee=stand rifle pr melee
+crouch rifle f melee=stand rifle f melee
+crouch rifle 99ar reload-1=stand rifle 99ar reload-1
+crouch rifle 99ar fire-1=stand rifle ar fire-1
+crouch rifle 99ar melee=stand rifle ar melee
+crouch rifle 99smg reload-1=stand rifle 99smg reload-1
+crouch rifle 99smg fire-1=stand rifle ar fire-1
+crouch rifle 99smg melee=stand rifle ar melee
+crouch rifle 99spg reload-1=stand rifle 99spg reload-1
+crouch rifle 99spg fire-1=stand rifle ar fire-2
+crouch rifle 99spg melee=stand rifle sr melee
+crouch rifle 99sr reload-1=stand rifle 99sr reload-1
+crouch rifle 99sr fire-1=stand rifle ar fire-2
+crouch rifle 99sr melee=stand rifle sr melee
+
+crouch pistol airborne=stand unarmed airborne
+crouch pistol land-soft=stand missile land-soft
+crouch pistol land-hard=stand missile land-hard
+crouch pistol melee=stand rifle melee
+crouch pistol throw-grenade=stand rifle throw-grenade
+crouch pistol hp reload-1=stand pistol hp reload-1
+crouch pistol hp fire-1=stand pistol hp fire-1
+crouch pistol hp melee=stand pistol hp melee
+crouch pistol pp fire-1=stand pistol hp fire-1
+crouch pistol pp melee=stand pistol pp melee
+crouch pistol ne reload-1=stand pistol ne reload-1
+crouch pistol ne melee=stand pistol ne melee
+crouch pistol b melee=stand pistol b melee
+crouch pistol 99hp reload-1=stand pistol 99hp reload-1
+crouch pistol 99hp fire-1=stand pistol hp fire-1
+crouch pistol 99hp melee=stand pistol hp melee
+
+crouch missile airborne=stand unarmed airborne
+crouch missile land-soft=stand missile land-soft
+crouch missile land-hard=stand missile land-hard
+crouch missile melee=stand rifle melee
+crouch missile throw-grenade=stand rifle throw-grenade
+crouch missile rl reload-1=stand missile rl reload-1
+crouch missile rl fire-1=stand missile rl fire-1
+crouch missile rl melee=stand missile rl melee
+crouch missile pc reload-1=stand missile rl reload-1
+crouch missile pc fire-1=stand missile rl fire-1
+crouch missile pc melee=stand missile rl melee
+crouch missile 99fc fire-1=stand missile rl fire-1
+crouch missile 99fc melee=stand missile rl melee
+crouch missile 99rl reload-1=stand missile 99rl reload-1
+crouch missile 99rl fire-1=stand missile rl fire-1
+crouch missile 99rl melee=stand missile rl melee
+crouch missile 99ml reload-1=stand missile 99ml reload-1
+crouch missile 99ml fire-1=stand missile rl fire-1
+crouch missile 99ml melee=stand missile rl melee
+
+crouch support land-soft=stand support land-soft
+crouch support land-hard=stand support land-hard
+crouch support ft reload-1=stand support ft reload-1
+crouch support ft melee=stand support ft melee
+
+crouch unarmed airborne=stand unarmed airborne
+crouch unarmed land-soft=stand missile land-soft
+crouch unarmed land-hard=stand missile land-hard
+crouch unarmed throw-grenade=stand rifle throw-grenade
+crouch unarmed melee=stand rifle melee
+
+crouch sword idle=crouch unarmed idle
+crouch sword turn-left=crouch unarmed turn-left
+crouch sword turn-right=crouch unarmed turn-right
+crouch sword move-front=crouch unarmed move-front
+crouch sword move-back=crouch unarmed move-back
+crouch sword move-left=crouch unarmed move-left
+crouch sword move-right=crouch unarmed move-right
+crouch sword land-soft=stand sword land-soft
+crouch sword land-hard=stand sword land-hard
+crouch sword aim-still=crouch rifle aim-still
+crouch sword aim-move=crouch rifle aim-move
+crouch sword sw fire-1=stand sword fire-1%0
+crouch sword sw fire-2=stand sword fire-2%1
+
+crouch forceblade idle=crouch unarmed idle
+crouch forceblade turn-left=crouch unarmed turn-left
+crouch forceblade turn-right=crouch unarmed turn-right
+crouch forceblade move-front=crouch unarmed move-front
+crouch forceblade move-back=crouch unarmed move-back
+crouch forceblade move-left=crouch unarmed move-left
+crouch forceblade move-right=crouch unarmed move-right
+crouch forceblade land-soft=stand sword land-soft
+crouch forceblade land-hard=stand sword land-hard
+crouch forceblade aim-still=crouch rifle aim-still
+crouch forceblade aim-move=crouch rifle aim-move
+crouch forceblade fb fire-1=stand sword fire-1%0
+crouch forceblade fb fire-2=stand forceblade fire-2%0
+
+crouch rifle melee=stand rifle melee
+
+stand rifle ar reload-2=stand rifle sr reload-1
+stand rifle pr fire-1=stand rifle ar fire-1
+stand rifle 99ar fire-1=stand rifle ar fire-1
+stand rifle 99ar fire-2=stand rifle ar fire-2
+stand rifle 99ar melee=stand rifle ar melee
+stand rifle 99smg fire-1=stand rifle ar fire-1
+stand rifle 99smg melee=stand rifle ar melee
+stand rifle 99spg fire-1=stand rifle ar fire-2
+stand rifle 99spg melee=stand rifle sr melee
+stand rifle 99sr fire-1=stand rifle ar fire-2
+stand rifle 99sr melee=stand rifle sr melee
+
+stand pistol throw-grenade=stand rifle throw-grenade
+stand pistol stunned-front=stand rifle stunned-front
+stand pistol stunned-back=stand rifle stunned-back
+stand pistol stunned-left=stand rifle stunned-left
+stand pistol stunned-right=stand rifle stunned-right
+stand pistol melee=stand rifle melee
+stand pistol pp fire-1=stand pistol hp fire-1
+stand pistol 99hp fire-1=stand pistol hp fire-1
+stand pistol 99hp melee=stand pistol hp melee
+
+stand missile throw-grenade=stand rifle throw-grenade
+stand missile stunned-back=stand missile stunned-front
+stand missile stunned-left=stand missile stunned-front
+stand missile stunned-right=stand missile stunned-front
+stand missile 99ml fire-1=stand missile rl fire-1
+stand missile 99ml melee=stand missile rl melee
+stand missile 99rl fire-1=stand missile rl fire-1
+stand missile 99rl melee=stand missile rl melee
+stand missile pc reload-1=stand missile rl reload-1
+stand missile pc fire-1=stand missile rl fire-1
+stand missile pc melee=stand missile rl melee
+stand missile 99fc fire-1=stand missile rl fire-1
+stand missile 99fc melee=stand missile rl melee
+
+stand unarmed idle%1=alert unarmed idle%1
+stand unarmed turn-left=alert unarmed turn-left
+stand unarmed turn-right=alert unarmed turn-right
+stand unarmed land-soft=stand missile land-soft
+stand unarmed land-hard=stand missile land-hard
+stand unarmed throw-grenade=stand rifle throw-grenade
+stand unarmed aim-still=alert unarmed aim-still
+
+stand sword sw fire-1=stand sword fire-1%0
+stand sword sw fire-2=stand sword fire-2%1
+
+stand forceblade move-back=stand sword move-back
+stand forceblade move-left=stand sword move-left
+stand forceblade move-right=stand sword move-right
+stand forceblade land-soft=stand sword land-soft
+stand forceblade land-hard=stand sword land-hard
+stand forceblade fb fire-1=stand sword fire-1%0
+stand forceblade fb fire-2=stand forceblade fire-2%0
+
+G-driver unarmed airborne=stand unarmed airborne
+G-driver unarmed land-soft=stand missile land-soft
+G-driver unarmed land-hard=stand missile land-hard
+G-driver unarmed throw-grenade=stand rifle throw-grenade
+
+B-driver unarmed airborne=stand unarmed airborne
+B-driver unarmed land-soft=stand missile land-soft
+B-driver unarmed land-hard=stand missile land-hard
+B-driver unarmed throw-grenade=stand rifle throw-grenade
+
+S-driver unarmed airborne=stand unarmed airborne
+S-driver unarmed land-soft=stand missile land-soft
+S-driver unarmed land-hard=stand missile land-hard
+S-driver unarmed throw-grenade=stand rifle throw-grenade
+
+S-gunner fixed airborne=stand unarmed airborne
+S-gunner fixed land-soft=stand missile land-soft
+S-gunner fixed land-hard=stand missile land-hard
+S-gunner fixed throw-grenade=stand rifle throw-grenade
+
+S-rider rifle airborne=stand unarmed airborne
+S-rider rifle land-soft=stand missile land-soft
+S-rider rifle land-hard=stand missile land-hard
+S-rider rifle throw-grenade=stand rifle throw-grenade
+
+R-driver unarmed airborne=stand unarmed airborne
+R-driver unarmed land-soft=stand missile land-soft
+R-driver unarmed land-hard=stand missile land-hard
+R-driver unarmed throw-grenade=stand rifle throw-grenade
+
+P-driver unarmed airborne=stand unarmed airborne
+P-driver unarmed land-soft=stand missile land-soft
+P-driver unarmed land-hard=stand missile land-hard
+P-driver unarmed throw-grenade=stand rifle throw-grenade
+
+alert rifle idle=stand rifle idle
+alert rifle turn-left=stand rifle turn-left
+alert rifle turn-right=stand rifle turn-right
+alert rifle airborne=stand unarmed airborne
+alert rifle land-soft=stand missile land-soft
+alert rifle land-hard=stand missile land-hard
+alert rifle throw-grenade=stand rifle throw-grenade
+alert rifle aim-still=stand rifle aim-still
+
+alert unarmed airborne=stand unarmed airborne
+alert unarmed land-soft=stand missile land-soft
+alert unarmed land-hard=stand missile land-hard
+alert unarmed throw-grenade=stand rifle throw-grenade
+
+W-rider rifle throw-grenade=stand rifle throw-grenade
+
+P-riderLF rifle airborne=stand unarmed airborne
+P-riderLF rifle land-soft=stand missile land-soft
+P-riderLF rifle land-hard=stand missile land-hard
+P-riderLF rifle throw-grenade=stand rifle throw-grenade
+
+GT-gunner unarmed airborne=stand unarmed airborne
+GT-gunner unarmed land-soft=stand missile land-soft
+GT-gunner unarmed land-hard=stand missile land-hard
+GT-gunner unarmed throw-grenade=stand rifle throw-grenade
+
+GT-gunner fixed airborne=stand unarmed airborne
+GT-gunner fixed land-soft=stand missile land-soft
+GT-gunner fixed land-hard=stand missile land-hard
+GT-gunner fixed throw-grenade=stand rifle throw-grenade
+
+CT-driver unarmed airborne=stand unarmed airborne
+CT-driver unarmed land-soft=stand missile land-soft
+CT-driver unarmed land-hard=stand missile land-hard
+CT-driver unarmed throw-grenade=stand rifle throw-grenade
+
+P-riderRF rifle idle=P-riderLF rifle idle
+P-riderRF rifle airborne=stand unarmed airborne
+P-riderRF rifle land-soft=stand missile land-soft
+P-riderRF rifle land-hard=stand missile land-hard
+P-riderRF rifle throw-grenade=stand rifle throw-grenade
+
+scorpionLF rifle airborne=stand unarmed airborne
+scorpionLF rifle land-soft=stand missile land-soft
+scorpionLF rifle land-hard=stand missile land-hard
+scorpionLF rifle throw-grenade=stand rifle throw-grenade
+scorpionLF rifle ar fire-1=stand rifle ar fire-1
+scorpionLF rifle pr fire-1=stand rifle ar fire-1
+scorpionLF rifle ne fire-1=stand rifle ar fire-1
+scorpionLF rifle sg fire-1=stand rifle sg fire-1
+scorpionLF rifle sr fire-1=stand rifle sg fire-1
+
+scorpionLF pistol idle=scorpionLF rifle idle
+scorpionLF pistol airborne=stand unarmed airborne
+scorpionLF pistol land-soft=stand missile land-soft
+scorpionLF pistol land-hard=stand missile land-hard
+scorpionLF pistol throw-grenade=stand rifle throw-grenade
+scorpionLF pistol aim-still=scorpionLF rifle aim-still
+scorpionLF pistol hp fire-1=stand pistol hp fire-1
+scorpionLF pistol pp fire-1=stand pistol hp fire-1
+
+scorpionLF missile idle=scorpionLF rifle idle
+scorpionLF missile airborne=stand unarmed airborne
+scorpionLF missile land-soft=stand missile land-soft
+scorpionLF missile land-hard=stand missile land-hard
+scorpionLF missile aim-still=scorpionLF rifle aim-still
+scorpionLF missile rl fire-1=stand rifle sg fire-1
+
+scorpionLB acc-front-back=scorpionLF acc-front-back
+scorpionLB acc-left-right=scorpionLF acc-left-right
+scorpionLB acc-up-down=scorpionLF acc-up-down
+scorpionLB enter=scorpionLF enter
+scorpionLB exit=scorpionLF exit
+
+scorpionLB rifle idle=scorpionLF rifle idle
+scorpionLB rifle throw-grenade=stand rifle throw-grenade
+scorpionLB rifle aim-still=scorpionLF rifle aim-still
+scorpionLB rifle ar fire-1=stand rifle ar fire-1
+scorpionLB rifle pr fire-1=stand rifle ar fire-1
+scorpionLB rifle ne fire-1=stand rifle ar fire-1
+scorpionLB rifle sg fire-1=stand rifle sg fire-1
+scorpionLB rifle sr fire-1=stand rifle sg fire-1
+
+scorpionLB pistol idle=scorpionLF rifle idle
+scorpionLB pistol throw-grenade=stand rifle throw-grenade
+scorpionLB pistol aim-still=scorpionLF rifle aim-still
+scorpionLB pistol hp fire-1=stand pistol hp fire-1
+scorpionLB pistol pp fire-1=stand pistol hp fire-1
+
+scorpionLB missile idle=scorpionLF rifle idle
+scorpionLB missile aim-still=scorpionLF rifle aim-still
+scorpionLB missile rl fire-1=stand rifle sg fire-1
+
+scorpionRB acc-front-back=scorpionLF acc-front-back
+scorpionRB acc-left-right=scorpionLF acc-left-right
+scorpionRB acc-up-down=scorpionLF acc-up-down
+scorpionRB enter=scorpionLF enter
+scorpionRB exit=scorpionLF exit
+
+scorpionRB rifle idle=scorpionLF rifle idle
+scorpionRB rifle throw-grenade=stand rifle throw-grenade
+scorpionRB rifle aim-still=scorpionLF rifle aim-still
+scorpionRB rifle ar fire-1=stand rifle ar fire-1
+scorpionRB rifle pr fire-1=stand rifle ar fire-1
+scorpionRB rifle ne fire-1=stand rifle ar fire-1
+scorpionRB rifle sg fire-1=stand rifle sg fire-1
+scorpionRB rifle sr fire-1=stand rifle sg fire-1
+
+scorpionRB pistol idle=scorpionLF rifle idle
+scorpionRB pistol throw-grenade=stand rifle throw-grenade
+scorpionRB pistol aim-still=scorpionLF rifle aim-still
+scorpionRB pistol hp fire-1=stand pistol hp fire-1
+scorpionRB pistol pp fire-1=stand pistol hp fire-1
+
+scorpionRB missile idle=scorpionLF rifle idle
+scorpionRB missile aim-still=scorpionLF rifle aim-still
+scorpionRB missile rl fire-1=stand rifle sg fire-1
+
+scorpionRF acc-front-back=scorpionLF acc-front-back
+scorpionRF acc-left-right=scorpionLF acc-left-right
+scorpionRF acc-up-down=scorpionLF acc-up-down
+scorpionRF enter=scorpionLF enter
+scorpionRF exit=scorpionLF exit
+
+scorpionRF rifle idle=scorpionLF rifle idle
+scorpionRF rifle throw-grenade=stand rifle throw-grenade
+scorpionRF rifle aim-still=scorpionLF rifle aim-still
+scorpionRF rifle ar fire-1=stand rifle ar fire-1
+scorpionRF rifle pr fire-1=stand rifle ar fire-1
+scorpionRF rifle ne fire-1=stand rifle ar fire-1
+scorpionRF rifle sg fire-1=stand rifle sg fire-1
+scorpionRF rifle sr fire-1=stand rifle sg fire-1
+
+scorpionRF pistol idle=scorpionLF rifle idle
+scorpionRF pistol throw-grenade=stand rifle throw-grenade
+scorpionRF pistol aim-still=scorpionLF rifle aim-still
+scorpionRF pistol hp fire-1=stand pistol hp fire-1
+scorpionRF pistol pp fire-1=stand pistol hp fire-1
+
+scorpionRF missile idle=scorpionLF rifle idle
+scorpionRF missile aim-still=scorpionLF rifle aim-still
+scorpionRF missile rl fire-1=stand rifle sg fire-1
+
+ST-driver unarmed idle=wraith-driver unarmed idle
+shadow-driver acc-front-back=G-driver acc-front-back
+shadow-driver acc-left-right=G-driver acc-left-right
+shadow-driver acc-up-down=G-driver acc-up-down
+shadow-driver enter=G-driver enter
+shadow-driver unarmed idle=G-driver unarmed idle

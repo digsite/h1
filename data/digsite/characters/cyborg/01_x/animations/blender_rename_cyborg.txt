@@ -1,0 +1,64 @@
+W-driver unarmed melee	
+W-gunner fixed melee	
+W-passenger rifle melee	
+W-passenger pistol melee	
+W-passenger pistol throw-grenade	stand rifle throw-grenade
+W-passenger missile melee	
+W-passenger missile throw-grenade	stand rifle throw-grenade
+W-passenger placan melee	
+W-passenger placan throw-grenade	stand rifle throw-grenade
+W-passenger flthr melee	
+crouch rifle melee	
+crouch pistol melee	
+crouch missile melee	
+crouch placan melee	
+crouch flthr melee	
+crouch unarmed melee	
+stand rifle melee	
+stand missile melee	
+stand placan melee	
+stand flthr melee	
+stand unarmed melee	
+G-driver unarmed melee	
+B-driver unarmed melee	
+S-driver unarmed melee	
+S-gunner fixed melee	
+S-rider rifle melee	
+R-driver unarmed melee	
+P-driver unarmed melee	
+alert rifle melee	
+alert unarmed melee	
+scorpion-driver unarmed throw-grenade	stand rifle throw-grenade
+scorpion-driver unarmed melee	
+driver lifepod unarmed throw-grenade	stand rifle throw-grenade
+driver lifepod unarmed melee	
+W-rider rifle melee	
+P-riderLF rifle melee	
+GT-gunner unarmed melee	
+GT-gunner fixed melee	
+CT-driver unarmed melee	
+P-riderRF rifle melee	
+scorpionLF rifle melee	
+scorpionLF pistol melee	
+scorpionLF missile melee	
+scorpionLF missile throw-grenade	stand rifle throw-grenade
+scorpionLF flthr melee	
+scorpionLF placan melee	
+scorpionLB rifle melee	
+scorpionLB pistol melee	
+scorpionLB missile melee	
+scorpionLB missile throw-grenade	stand rifle throw-grenade
+scorpionLB flthr melee	
+scorpionLB placan melee	
+scorpionRB rifle melee	
+scorpionRB pistol melee	
+scorpionRB missile melee	
+scorpionRB missile throw-grenade	stand rifle throw-grenade
+scorpionRB flthr melee	
+scorpionRB placan melee	
+scorpionRF rifle melee	
+scorpionRF pistol melee	
+scorpionRF missile melee	
+scorpionRF missile throw-grenade	stand rifle throw-grenade
+scorpionRF flthr melee	
+scorpionRF placan melee	

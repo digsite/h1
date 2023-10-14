@@ -1,0 +1,9 @@
+
+Notes:
+01_x is provided as is.
+99_mac was reworked from 01_x with as much macworld and xbox stats preserved as possible.
+Vehicle type changed from human plane to alien fighter 
+as human plane was never finished to be player functional.
+Antigrav points were added to mimic human plane hover.
+Primary attack is warthog chainguns firing chaingun_99_mac bullets.
+Secondary attack is rocket hog launchers firing missile_launcher_99_mac missiles.

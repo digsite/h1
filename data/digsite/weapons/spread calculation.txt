@@ -1,0 +1,18 @@
+
+Old tag data does not present weapon spread as an angle, 
+rather it applies a velocity error against the projectile in a random direction.
+If the random direction happens to be 90 degrees relative to the projectiles vector, 
+that would then result in the most amount of deviation from initial vector.
+
+The spread in degrees can be calculated as:
+
+		(b^2 + c^2 - a^2)
+<A = arccos----------------------
+		(2bc)
+
+			(velocity^2 + velocity error^2 - velocity^2)
+error angle max = arccos--------------------------------------------
+			(2 * velocity * velocity error)
+
+This assumes the resulting angle is the diameter of spread and not the radius,
+but this was done as the values before being doubled resulted in better gameplay.

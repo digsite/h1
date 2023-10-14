@@ -1,0 +1,52 @@
+				Source		Digsite
+
+	weapon
+heat recovery threshold		0.6		0.25
+overheated threshold		0.8		1
+heat detonation threshold	0		unchanged
+heat detonation fraction	0		unchanged
+heat loss per second		0.25		0.56
+
+magnification levels		n/a		0
+magnification range min		n/a		0
+magnification range max		n/a		0
+
+rounds recharged		0		unchanged
+rounds total initial		n/a		528
+rounds total maximum		n/a		528
+rounds loaded maximum		176		unchanged
+rounds reloaded			n/a		176
+
+	primary trigger
+initial round per second	1		unchanged
+final rounds per second		15		unchanged
+firing acceleration time	2		unchanged
+firing deceleration time	3		unchanged
+rounds per shot			1		unchanged
+error acceleration time		2		unchanged
+error deceleration time		0.5		unchanged
+charging time			0		unchanged
+charged time			0		unchanged
+projectiles per shot		1		unchanged
+minimum error			n/a		0 degrees
+error angle min			0		unchanged
+error angle max			3 wu/s		1.146 degrees
+heat generated per round	0.05		unchanged
+age generated per round		n/a		0
+
+	projectile
+initial velocity		300 wu/s	unchanged
+final velocity			300 wu/s	297 wu/s
+air gravity scale		1		unchanged
+
+	damage
+radius lower			n/a wu		unchanged
+radius upper			n/a wu		unchanged
+minimum damage			0.5		8
+maximum damage lower		n/a		16
+maximum damage upper		1		16
+
+
+Notes:
+Original overheated quickly and vented slowly,
+Reworked to match other retail weapon overheat times.

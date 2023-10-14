@@ -1,0 +1,2 @@
+first-person stealth-melee=first-person melee
+

@@ -1,0 +1,56 @@
+s-ping front l-arm%0=s-ping front l-hand%0
+s-ping left l-leg=s-ping front l-leg
+s-ping left r-leg=s-ping front r-leg
+s-ping right r-leg=s-ping front r-leg
+s-ping right l-leg=s-ping front l-leg
+
+crouch unarmed airborne=stand unarmed airborne
+crouch unarmed land-hard=stand unarmed land-hard
+crouch unarmed land-soft=stand unarmed land-soft
+
+
+CD-passengerL02 exit%1=CD-passengerL01 exit%1
+
+CD-passengerL03 exit%1=CD-passengerL01 exit%1
+
+CD-passengerL04 exit%1=CD-passengerL01 exit%1
+
+CD-passengerR01 exit%1=CD-passengerL01 exit%1
+
+CD-passengerR02 exit%1=CD-passengerL01 exit%1
+
+CD-passengerR03 exit%1=CD-passengerL01 exit%1
+
+CD-passengerR04 exit%1=CD-passengerL01 exit%1
+
+alert unarmed aim-move=stand unarmed aim-still
+alert unarmed aim-still=stand unarmed aim-still
+crouch unarmed aim-move=stand unarmed aim-still
+crouch unarmed aim-still=stand unarmed aim-still
+stand unarmed aim-move=stand unarmed aim-still
+crouch look=stand look
+
+stand unarmed dive-front=crouch unarmed move-front
+stand unarmed dive-left=crouch unarmed move-left
+stand unarmed dive-right=crouch unarmed move-right
+
+stand unarmed move-back=crouch unarmed move-back
+stand unarmed move-left=crouch unarmed move-left
+stand unarmed move-right=crouch unarmed move-right
+
+crouch unarmed dive-front=crouch unarmed move-front
+crouch unarmed dive-left=crouch unarmed move-left
+crouch unarmed dive-right=crouch unarmed move-right
+
+alert unarmed dive-front=crouch unarmed move-front
+alert unarmed dive-left=crouch unarmed move-left
+alert unarmed dive-right=crouch unarmed move-right
+
+alert unarmed move-back=crouch unarmed move-back
+alert unarmed move-left=crouch unarmed move-left
+alert unarmed move-right=crouch unarmed move-right
+
+alert unarmed move-front=stand unarmed move-front
+alert unarmed turn-left=stand unarmed turn-left
+alert unarmed turn-right=stand unarmed turn-right
+alert unarmed idle=stand unarmed idle%0

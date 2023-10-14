@@ -1,0 +1,68 @@
+				Source		Digsite
+
+	weapon
+heat recovery threshold		0		0.04
+overheated threshold		0		0.2
+heat detonation threshold	0		unchanged
+heat detonation fraction	0		unchanged
+heat loss per second		0		1
+
+magnification levels		n/a		0
+magnification range min		n/a		0
+magnification range max		n/a		0
+
+rounds recharged		0		unchanged
+rounds total initial		n/a		150
+rounds total maximum		n/a		250
+rounds loaded maximum		50		unchanged
+rounds reloaded			n/a		50
+
+	primary trigger
+initial round per second	19		unchanged
+final rounds per second		19		unchanged
+firing acceleration time	0		unchanged
+firing deceleration time	0		unchanged
+rounds per shot			1		unchanged
+error acceleration time		0.1		unchanged
+error deceleration time		2		unchanged
+charging time			0		unchanged
+charged time			0		unchanged
+projectiles per shot		1		unchanged
+minimum error			n/a		0 degrees
+error angle min			0		unchanged
+error angle max			3 wu/s		5.427 degrees
+heat generated per round	0		unchanged
+age generated per round		n/a		0
+
+	secondary trigger
+initial round per second	5 (x3)		15
+final rounds per second		5 (x3)		15
+firing acceleration time	0		unchanged
+firing deceleration time	0		unchanged
+rounds per shot			1		unchanged
+error acceleration time		0.5		unchanged
+error deceleration time		2		unchanged
+charging time			0		unchanged
+charged time			0		unchanged
+projectiles per shot		1		unchanged
+minimum error			n/a		0 degrees
+error angle min			0		unchanged
+error angle max			3 wu/s		1.809 degrees
+heat generated per round	0		0.1
+age generated per round		n/a		0
+
+	projectile
+initial velocity		95 wu/s		unchanged
+final velocity			95 wu/s		3 wu/s
+air gravity scale		1		unchanged
+
+	damage
+radius lower			n/a wu		unchanged
+radius upper			n/a wu		unchanged
+minimum damage			0.5		5
+maximum damage lower		n/a		10
+maximum damage upper		1		10
+
+
+Notes:
+Original featured burst fire but as a single effect like a shotgun, reworked to be a more traditional burst with ce's limitations. Spread widened to not completely outclass retail assault rifle.

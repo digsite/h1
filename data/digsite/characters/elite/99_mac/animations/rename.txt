@@ -1,0 +1,72 @@
+h-kill left gut=s-kill left gut
+h-kill right gut=s-kill right gut
+
+crouch pistol airborne=stand pistol airborne
+crouch pistol land-hard=stand pistol land-hard
+crouch pistol land-soft=stand pistol land-soft
+
+
+
+CD-passengerL02 exit%1=CD-passengerL01 exit%1
+
+CD-passengerL03 exit%1=CD-passengerL01 exit%1
+
+CD-passengerL04 exit%1=CD-passengerL01 exit%1
+
+CD-passengerR01 exit%1=CD-passengerL01 exit%1
+
+CD-passengerR02 exit%1=CD-passengerL01 exit%1
+
+CD-passengerR03 exit%1=CD-passengerL01 exit%1
+
+CD-passengerR04 exit%1=CD-passengerL01 exit%1
+
+
+CD-passengerL02 pistol idle%1=CD-passengerL01 pistol idle%1
+
+CD-passengerL03 pistol idle%1=CD-passengerL01 pistol idle%1
+
+CD-passengerL04 pistol idle%1=CD-passengerL01 pistol idle%1
+
+CD-passengerR01 pistol idle%1=CD-passengerL01 pistol idle%1
+
+CD-passengerR02 pistol idle%1=CD-passengerL01 pistol idle%1
+
+CD-passengerR03 pistol idle%1=CD-passengerL01 pistol idle%1
+
+CD-passengerR04 pistol idle%1=CD-passengerL01 pistol idle%1
+
+
+CD-passengerL01 sword idle=CD-passengerL01 pistol idle
+
+CD-passengerL02 sword idle=CD-passengerL01 pistol idle
+
+CD-passengerL03 sword idle=CD-passengerL01 pistol idle
+
+CD-passengerL04 sword idle=CD-passengerL01 pistol idle
+
+CD-passengerR01 sword idle=CD-passengerL01 pistol idle
+
+CD-passengerR02 sword idle=CD-passengerL01 pistol idle
+
+CD-passengerR03 sword idle=CD-passengerL01 pistol idle
+
+CD-passengerR04 sword idle=CD-passengerL01 pistol idle
+
+stand pistol pr fire-1=stand pistol pp fire-1
+stand pistol ne fire-1=stand pistol pp fire-1
+crouch pistol pp fire-1=stand pistol pp fire-1
+crouch pistol pr fire-1=stand pistol pp fire-1
+crouch pistol ne fire-1=stand pistol pp fire-1
+stand pistol pp reload-1=stand pistol pr reload-1
+stand pistol ne reload-1=stand pistol pr reload-1
+crouch pistol pr reload-1=stand pistol pr reload-1
+crouch pistol pp reload-1=stand pistol pr reload-1
+crouch pistol ne reload-1=stand pistol pr reload-1
+
+wraith-driver unarmed idle=stand pistol idle
+alert sword idle=alert pistol idle
+alert sword aim-still=alert pistol aim-still
+alert sword turn-left=alert pistol turn-left
+alert sword turn-right=alert pistol turn-right
+flaming pistol move-front=stand pistol move-front

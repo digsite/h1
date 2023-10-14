@@ -1,0 +1,13 @@
+W-passenger pistol throw-grenade	stand rifle throw-grenade
+W-passenger missile throw-grenade	stand rifle throw-grenade
+W-passenger rifle 99smg reload-1	stand rifle 99smg reload-1
+W-passenger rifle 99spg reload-1	stand rifle 99spg reload-1
+W-passenger pistol 99hp reload-1	stand pistol 99hp reload-1
+W-passenger missile 99ml reload-1	stand missile 99ml reload-1
+W-passenger missile 99rl reload-1	stand missile 99rl reload-1
+scorpion-driver unarmed throw-grenade	stand rifle throw-grenade
+driver lifepod unarmed throw-grenade	stand rifle throw-grenade
+scorpionLF missile throw-grenade	stand rifle throw-grenade
+scorpionLB missile throw-grenade	stand rifle throw-grenade
+scorpionRB missile throw-grenade	stand rifle throw-grenade
+scorpionRF missile throw-grenade	stand rifle throw-grenade

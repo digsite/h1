@@ -1,0 +1,86 @@
+				Source		Digsite
+
+	weapon
+heat recovery threshold		0		unchanged
+overheated threshold		0		unchanged
+heat detonation threshold	0		unchanged
+heat detonation fraction	0		unchanged
+heat loss per second		0		unchanged
+
+magnification levels		n/a		0
+magnification range min		n/a		0
+magnification range max		n/a		0
+
+rounds recharged		0		unchanged
+rounds total initial		n/a		126
+rounds total maximum		n/a		210
+rounds loaded maximum		42		unchanged
+rounds reloaded			n/a		42
+
+rounds recharged		0		unchanged
+rounds total initial		n/a		18
+rounds total maximum		n/a		18
+rounds loaded maximum		6		unchanged
+rounds reloaded			n/a		6
+
+	primary trigger
+initial round per second	10		unchanged
+final rounds per second		10		unchanged
+firing acceleration time	0		unchanged
+firing deceleration time	0		unchanged
+rounds per shot			1		unchanged
+error acceleration time		2		unchanged
+error deceleration time		0.5		unchanged
+charging time			0		unchanged
+charged time			0		unchanged
+projectiles per shot		1		unchanged
+minimum error			n/a		0 degrees
+error angle min			0		unchanged
+error angle max			10 wu/s		3.274 degrees
+heat generated per round	0		unchanged
+age generated per round		n/a		0
+
+	projectile
+initial velocity		350 wu/s	unchanged
+final velocity			350 wu/s	10 wu/s
+air gravity scale		1		unchanged
+
+	damage
+radius lower			n/a wu		unchanged
+radius upper			n/a wu		unchanged
+minimum damage			0.5		5
+maximum damage lower		n/a		10
+maximum damage upper		1		10
+
+	secondary trigger
+initial round per second	1		unchanged
+final rounds per second		1		unchanged
+firing acceleration time	0		unchanged
+firing deceleration time	0		unchanged
+rounds per shot			1		unchanged
+error acceleration time		0		2
+error deceleration time		0		0.5
+charging time			0		unchanged
+charged time			0		unchanged
+projectiles per shot		1		unchanged
+minimum error			n/a		0 degrees
+error angle min			0		unchanged
+error angle max			2 wu/s		0 degrees
+heat generated per round	0		unchanged
+age generated per round		0		unchanged
+
+	projectile
+initial velocity		20 wu/s		unchanged
+final velocity			20 wu/s		15 wu/s
+air gravity scale		1		unchanged
+
+	damage
+radius lower			1 wu		unchanged
+radius upper			2.3 wu		unchanged
+minimum damage			0		45
+maximum damage lower		n/a		90
+maximum damage upper		0		90
+
+
+Notes:
+Thank you very much MCC team for reenabling depricated weapon functions including fp secondary magazine reloading.

@@ -1,0 +1,15 @@
+
+The Macworld weapons and other older weapon tags were designed to replicate the original third person experiance as accurately as CE would allow. In order to do this the projectile system had to be reworked to fire from the weapon instead of the player camera. If you wish to undo these weapon tag changes and make first person versions for your own mods follow these steps:
+
+Delete the Attachments block containing the reticle.effect tag to remove the 3D reticle.
+Change or modify the linked hud interface under 'interface' to use a weapon_hud_interface tag containing a 2D reticle.
+The above two changes will revert the weapon to use a traditional first person hud.
+
+Change or modify the firing effect(s) in the Triggers block to use effect tags that do not create projectiles.
+Add a new or existing projectile tag to the projectile field in the Triggers block. The projectile must have velocity in  order to be fired from the Trigger.
+The above two changes will revert the weapon to fire projectiles towards where the camera if facing rather than where the weapon barrel and arms are pointing.
+
+If you wish to use weapons already set up for first person, search for our custom made alternatives found inside subfolders name '_dig'.
+	digsite\weapons\assault_rifle\99_mac\_dig
+	digsite\weapons\chaingun\99_mac\_dig
+	digsite\weapons\smg\99_mac\_dig
