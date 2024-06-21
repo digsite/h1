@@ -1,0 +1,547 @@
+(global boolean encounter03_test false)
+
+(script static void setgravity
+    (physics_set_gravity 0.36)
+    (print "gravitylow")
+)
+
+(script dormant saveoutside
+    (sleep_until (volume_test_objects "caveentrance" (players)))
+    (print "save01")
+    (game_save_totally_unsafe)
+)
+
+(script dormant save01
+    (sleep_until (volume_test_objects "save01" (players)))
+    (print "save01")
+    (game_save_totally_unsafe)
+)
+
+(script dormant gravitysave
+    (sleep_until (volume_test_objects "gravitysave" (players)))
+    (print "gravitysave")
+    (game_save_totally_unsafe)
+)
+
+(script dormant aftergravitysave
+    (sleep_until (volume_test_objects "6thencounter" (players)))
+    (print "aftergravitysave")
+    (game_save_totally_unsafe)
+)
+
+(script dormant killplayer01
+    (sleep_until (volume_test_objects "killplayer01" (players)))
+    (print "you died!!!!!!")
+    (game_revert)
+)
+
+(script dormant killplayer02
+    (sleep_until (volume_test_objects "killplayer02" (players)))
+    (print "you died!!!!!!")
+    (game_revert)
+)
+
+(script dormant killplayer03
+    (sleep_until (volume_test_objects "killplayer03" (players)))
+    (print "you died!!!!!!")
+    (game_revert)
+)
+
+(script dormant controlroom
+    (print "controlroom")
+    (ai_place "nsq_5thencounter/controlroom")
+    (ai_place "nsq_5thencounter/controlroomelite")
+    ;(ai_set_orders "controlroom" "5thencounter/controlroomattack")
+    ;(ai_set_orders "controlroomelite" "5thencounter/controlroomattack")
+    (sleep_until 
+        (or
+            (volume_test_objects "swordelite" (players))
+            (<= (ai_living_count "nsq_5thencounter/controlroomelite") 0)
+            (<= (ai_living_count "nsq_5thencounter/controlroom") 1)
+        )
+    )
+    (ai_place "nsq_5thencounter/swordelite")
+    ;(ai_set_orders "swordelite" "5thencounter/swordelite")
+)
+
+(script dormant 5thencounter
+    (sleep_until (volume_test_objects "5thencounter" (players)))
+    (print "5thencounter")
+    (ai_place "nsq_5thencounter/5thencounter")
+    ;(ai_set_orders "5thencounter" "5thencounter/attack")
+    (wake controlroom)
+)
+
+(script dormant 6thencounter
+    (sleep_until (volume_test_objects "6thencounter" (players)))
+    (ai_place "nsq_6thencounter/6thencounter")
+    ;(ai_set_orders "6thencounter" "6thencounter/attack")
+    (sleep_until (volume_test_objects "5thencounter" (players)))
+    ;(ai_set_orders "6thencounter" "6thencounter/attack02")
+)
+
+(script dormant 2ndprotopuz
+    (object_create_containing "2ndprotopuz")
+    (object_create_anew "giantdoor01control")
+)
+
+(script dormant 4thencounter
+    (sleep_until (volume_test_objects "4thencounter" (players)))
+    (print "4thencounter")
+    (ai_place "nsq_4thencounter/4thencounter")
+    ;(ai_set_orders "4thencounter" "4thencounter/attack")
+    (wake 5thencounter)
+    (wake 6thencounter)
+)
+
+(script dormant shootglass01
+    ;(ai_set_orders "3rdencounter" "3rdencounter/attack")
+	(ai_magically_see_players nsq_3rdencounter/3rdencountertest)
+    (ai_command_list "nsq_3rdencounter/3rdencountertest" "shootglass01wait")
+    (sleep_until (volume_test_objects "shootglass01" (players)) 15)
+    (print "shootglass")
+	(ai_magically_see_players nsq_3rdencounter/3rdencountertest)
+    (ai_command_list "nsq_3rdencounter/3rdencountertest" "shootglass01")
+)
+
+(script dormant 3rdencounter
+    (sleep_until (volume_test_objects "3rdencounter" (players)))
+    (ai_place "nsq_3rdencounter/3rdencounter")
+    (ai_place "nsq_3rdencounter/3rdencountertest")
+    ;(ai_set_orders "3rdencounter" "3rdencounter/attack")
+    (wake shootglass01)
+    (wake 4thencounter)
+    (wake 2ndprotopuz)
+    (wake aftergravitysave)
+)
+
+(script dormant fallingdrive
+    (sleep 30)
+    (device_set_position "fallingdrive01" 1.0)
+    (sleep 30)
+    (device_set_position "fallingdrive02" 1.0)
+    (sleep 5)
+    (device_set_position "fallingdrive03" 1.0)
+    (effect_new "scenery\emitters\stone debris\effects\stone debris" "gravitydebris05")
+    (sleep 30)
+    (print "fallingdrive04")
+    (device_set_position "fallingdrive04" 1.0)
+)
+
+(script dormant debriseffects
+    (print "debriseffects")
+    (effect_new "scenery\emitters\stone debris\effects\stone debris" "gravitydebris01")
+    (effect_new "scenery\emitters\stone debris\effects\stone debris" "gravitydebris06")
+    (sleep 30)
+    (effect_new "scenery\emitters\stone debris\effects\stone debris" "gravitydebris02")
+    (effect_new "scenery\emitters\stone debris\effects\stone debris" "gravitydebris07")
+    (sleep 8)
+    (effect_new "scenery\emitters\stone debris\effects\stone debris" "gravitydebris03")
+    (effect_new "scenery\emitters\stone debris\effects\stone debris" "gravitydebris08")
+    (sleep 25)
+    (effect_new "scenery\emitters\stone debris\effects\stone debris" "gravitydebris04")
+    (sleep 15)
+    (effect_new "scenery\emitters\stone debris\effects\stone debris" "gravitydebris01")
+    (effect_new "scenery\emitters\stone debris\effects\stone debris" "gravitydebris06")
+    (sleep 30)
+    (effect_new "scenery\emitters\stone debris\effects\stone debris" "gravitydebris02")
+    (effect_new "scenery\emitters\stone debris\effects\stone debris" "gravitydebris07")
+    (sleep 8)
+    (effect_new "scenery\emitters\stone debris\effects\stone debris" "gravitydebris03")
+    (effect_new "scenery\emitters\stone debris\effects\stone debris" "gravitydebris08")
+    (sleep 25)
+    (effect_new "scenery\emitters\stone debris\effects\stone debris" "gravitydebris04")
+)
+
+(script dormant playershake
+    (player_effect_set_max_rotation 0.0 0.3 0.3)
+    (player_effect_start 1.0 2.0)
+    (sleep 240)
+    (player_effect_stop 2.0)
+)
+
+(script dormant alte
+    (object_create_anew "alteeffect01")
+    (object_create_anew "alteeffect02")
+    (object_create_anew "alteeffect03")
+    (object_create_anew "alteeffect04")
+)
+
+(script dormant altel
+    (object_create_anew "alteleffect01")
+    (object_create_anew "alteleffect02")
+    (object_create_anew "alteleffect03")
+    (object_create_anew "alteleffect04")
+    (object_create_anew "alteleffect05")
+    (object_create_anew "alteleffect06")
+)
+
+(script dormant gravity
+    (sleep_until (<= (ai_living_count "nsq_powerroom01/powerroom01elites02") 0))
+    (sleep 15)
+    (print "!!!!!!!!!!!!! gravity restored !!!!!!!!!!!!!!!!")
+    (print "!!!!!!!!!!!!! power restored !!!!!!!!!!!!!!!!")
+    (ai_erase "nsq_2ndencounter/2ndencounter")
+    (ai_erase "nsq_2ndencounter/2ndencounterlower")
+    (switch_bsp 1)
+    (object_create_containing "zdebris")
+    (object_create_containing "powerlight")
+    (object_create_anew "fallingdrive01")
+    (object_create_anew "fallingdrive02")
+    (object_create_anew "fallingdrive03")
+    (object_create_anew "fallingdrive04")
+    (wake fallingdrive)
+    (wake playershake)
+    (wake debriseffects)
+    (object_create_anew "altelevatortrashed01")
+    (object_create_anew "altelevatortrashed02")
+    (object_create_anew "alte00")
+    (object_create_anew "alte01")
+    (object_create_anew "alte02")
+    (object_create_anew "alte03")
+    (object_create_anew "alte05")
+    (object_create_anew "alte06")
+    (object_create_anew "alte07")
+    (object_destroy "alte08")
+    (object_destroy "alte09")
+    (object_create_anew "alteelite01")
+    (object_create_anew "altegrunt01")
+    (wake altel)
+    (wake alte)
+    (object_create_anew "altel01")
+    (object_create_anew "altel02")
+    (physics_set_gravity 1.0)
+    (device_group_set_immediate "lockeddoors" 1.0)
+    (sleep 30)
+    (object_create_anew "alte04")
+)
+
+(script dormant powerroom01
+    (sleep_until (volume_test_objects "gravitysave" (players)))
+    (ai_place "nsq_powerroom01/powerroom01elites")
+    (ai_place "nsq_powerroom01/powerroom01grunts")
+    ;(ai_set_orders "powerroom01elites" "powerroom01/defend")
+    ;(ai_set_orders "powerroom01grunts" "powerroom01/defend")
+    (sleep_until (volume_test_objects "gravity" (players)))
+    (print "attack")
+    ;(ai_set_orders "powerroom01elites" "powerroom01/attack")
+    ;(ai_set_orders "powerroom01grunts" "powerroom01/attack")
+    (sleep_until 
+        (and
+            (<= (ai_living_count "nsq_powerroom01/powerroom01elites") 0)
+            (<= (ai_living_count "nsq_powerroom01/powerroom01grunts") 0)
+        )
+    )
+    (ai_place "nsq_powerroom01/powerroom01elites02")
+    ;(ai_set_orders "powerroom01elites02" "powerroom01/attack")
+    (wake gravity)
+)
+
+(script dormant 2ndencounterretreat
+    (sleep_until (volume_test_objects "2ndencounterretreat" (players)))
+    ;(ai_set_orders "2ndencounter" "2ndencounter/retreat")
+    ;(ai_set_orders "2ndencounterlower" "2ndencounter/retreat")
+)
+
+(script dormant 2ndencounter
+    (sleep_until (volume_test_objects "2ndencounter" (players)))
+    (ai_erase "nsq_1stencounter/1stencounter")
+    (ai_erase "nsq_1stencounter/1stencounter02")
+    (ai_erase "nsq_2ndexplore/2ndexplore")
+    (ai_place "nsq_2ndencounter/2ndencounter")
+    ;(ai_set_orders "2ndencounter" "2ndencounter/topattack")
+    (print "2ndencounterlower")
+    (ai_place "nsq_2ndencounter/2ndencounterlower")
+    ;(ai_set_orders "2ndencounterlower" "2ndencounter/middleattack")
+    (wake 2ndencounterretreat)
+    (wake powerroom01)
+    (wake 3rdencounter)
+    (wake gravitysave)
+    (sleep_until 
+        (and
+            (<= (ai_living_count "nsq_2ndencounter/2ndencounter") 4)
+            (>= (ai_living_count "nsq_2ndencounter/2ndencounterlower") 5)
+        )
+    )
+    ;(ai_set_orders "2ndencounterlower" "2ndencounter/topattack")
+)
+
+(script dormant 2ndexplore
+    (sleep_until (volume_test_objects "2ndexplore" (players)))
+    (ai_place "nsq_2ndexplore/2ndexplore")
+    ;(ai_set_orders "2ndexplore" "2ndexplore/attack")
+    (wake 2ndencounter)
+)
+
+(script dormant 1stencounter02
+    (sleep_until (<= (ai_living_count "nsq_1stencounter/1stencounter") 3))
+    (device_group_set_immediate "1stencounter02" 1.0)
+    (ai_place "nsq_1stencounter/1stencounter02")
+    ;(ai_set_orders "1stencounter02" "1stencounter/attack02")
+)
+
+(script dormant 1stencounter
+    (sleep_until 
+        (or
+            (volume_test_objects "1stencountermiddle" (players))
+            (volume_test_objects "1stencounterright" (players))
+            (volume_test_objects "1stencounterleft" (players))
+        )
+    )
+    (ai_erase "nsq_baseentrance/moonbasefront")
+    (ai_erase "nsq_baseentrance/moonbaserear")
+    (ai_erase "nsq_encounter03/encounter03")
+    (ai_place "nsq_1stencounter/1stencounter")
+    ;(ai_set_orders "1stencounter" "1stencounter/attack")
+    (wake 1stencounter02)
+    (wake 2ndexplore)
+    (sleep -1 killplayer01)
+    (sleep -1 killplayer02)
+    (sleep -1 killplayer03)
+)
+
+(script dormant caveback
+    (sleep_until 
+        (or
+            (volume_test_objects "cavecov02" (players))
+            (volume_test_objects "cavecov02front" (players))
+            (volume_test_objects "cavecov02pit" (players))
+        )
+    )
+    (ai_place "lowercave/caveback")
+    (ai_place "lowercave/cavegruntslower")
+    ;(ai_set_orders "caveback" "cave/caveback")
+    ;(ai_set_orders "cavegruntslower" "cave/gruntsattack")
+    (sleep_until (volume_test_objects "caveback" (players)))
+    (ai_erase "nsq_test/elites")
+    ;(ai_set_orders "caveback" "cave/cavefront")
+    ;(ai_set_orders "cavegruntslower" "cave/cavefront")
+    (sleep_until (volume_test_objects "caveback" (players)))
+    ;(ai_set_orders "caveback" "cave/caveexit")
+    ;(ai_set_orders "cavegruntslower" "cave/caveexit")
+)
+
+(script dormant cavegrunts
+    (sleep_until (volume_test_objects "cavegrunts" (players)))
+    (ai_place "nsq_test/cavegrunts")
+    ;(ai_set_orders "cavegrunts" "cave/upcavecombat")
+)
+
+(script dormant encounter04dropship
+    (print "encounter04dropship")
+    (object_create_anew "encounter04dropship")
+	(unit_close encounter04dropship)
+    (recording_play "encounter04dropship" "encounter04dropship")
+    (sleep (recording_time "encounter04dropship"))
+    (object_destroy "encounter04dropship")
+)
+
+(script dormant moonbaserear
+    (print "moonbaseback")
+    (ai_erase "nsq_test/elites")
+    (ai_erase "nsq_test/cavegrunts")
+    (ai_erase "lowercave/caveback")
+    (ai_place "nsq_baseentrance/moonbaserear")
+    ;(ai_set_orders "moonbaserear" "baseentrance/rearattack")
+    (sleep_until (volume_test_objects "moonbaserear" (players)) 15)
+    ;(ai_set_orders "moonbaserear" "baseentrance/middlerear")
+    (sleep_until (volume_test_objects "rearattack" (players)) 15)
+    ;(ai_set_orders "moonbaserear" "baseentrance/rearattack02")
+    (sleep_until (volume_test_objects "insidebase" (players)))
+    (print "insidebase")
+    ;(ai_set_orders "moonbaserear" "baseentrance/insidebase")
+    (wake 1stencounter)
+    (wake save01)
+)
+
+(script dormant moonbasefront
+    (print "moonbasefront")
+    (sleep_until (volume_test_objects "moonbasefront" (players)) 15)
+    (print "moonbasefront")
+    (ai_place "nsq_baseentrance/moonbasefront")
+    ;(ai_set_orders "moonbasefront" "baseentrance/front")
+    (sleep_until (volume_test_objects "moonbasemiddle" (players)) 15)
+    (wake moonbaserear)
+    (wake encounter04dropship)
+    ;(ai_set_orders "moonbasefront" "baseentrance/middle")
+    (sleep_until (volume_test_objects "moonbaserear" (players)) 15)
+    ;(ai_set_orders "moonbasefront" "baseentrance/rear")
+)
+
+(script dormant fallback
+    (print "fallback")
+    (sleep_until (volume_test_objects "fallback" (players)))
+    (print "fallback2")
+    ;(ai_set_orders "elites" "test/fallback")
+    (ai_place "nsq_test/grunts")
+    ;(ai_set_orders "grunts" "test/retreat")
+    (sleep_until (volume_test_objects "nearcave" (players)))
+    (print "nearcave")
+    ;(ai_set_orders "elites" "test/retreat")
+    (sleep_until (volume_test_objects "caveentrance" (players)))
+    (print "caveentrance")
+    ;(ai_set_orders "elites" "test/caveentrance")
+    (wake saveoutside)
+)
+
+(script dormant encounter03fallback
+    (sleep_until (volume_test_objects "encounter03fallback" (players)) 15)
+    (print "encounter03fallback")
+    ;(ai_set_orders "encounter03" "encounter03/encounter03fallback")
+    (sleep_until (volume_test_objects "encounter03fallback" (players)) 15)
+    (print "encounter03forward")
+    ;(ai_set_orders "encounter03" "baseentrance/forward")
+    (sleep_until (volume_test_objects "moonbaserear" (players)) 15)
+    (print "encounter03middle")
+    ;(ai_set_orders "encounter03" "baseentrance/encounter03middle")
+)
+
+(script static void dropshiploadalt
+    (ai_place "nsq_encounter03/encounter03")
+    (ai_braindead "nsq_encounter03/encounter03" true)
+    (vehicle_load_magic "dropship04" "passenger" (ai_actors "nsq_encounter03/encounter03"))
+	(unit_close dropship04)
+)
+
+(script static void dropshipunloadalt
+    (print "dropshipalt")
+	(unit_open dropship04)
+    (vehicle_unload "dropship04" "passenger")
+    (ai_braindead "nsq_encounter03/encounter03" false)
+    ;(ai_set_orders "encounter03" "encounter03/encounter03")
+)
+
+(script static void dropshipload
+    (ai_place "nsq_encounter03/encounter03")
+    (ai_braindead "nsq_encounter03/encounter03" true)
+    (vehicle_load_magic "encounter03dropshipup" "passenger" (ai_actors "nsq_encounter03/encounter03"))
+	(unit_close encounter03dropshipup)
+)
+
+(script static void dropshipunload
+	(unit_open encounter03dropshipup)
+    (vehicle_unload "encounter03dropshipup" "passenger")
+    (ai_braindead "nsq_encounter03/encounter03" false)
+    ;(ai_set_orders "encounter03" "encounter03/encounter03")
+)
+
+(script dormant encounter03dropship
+    (sleep_until (volume_test_objects "encounter03dropship" (players)) 15)
+    (print "encounter03dropship")
+    (if encounter03_test 
+        (sleep -1))
+    (set encounter03_test true)
+    (object_create_anew "dropship04")
+    (recording_play "dropship04" "dropship04")
+    (wake encounter03fallback)
+    (wake moonbasefront)
+    (dropshiploadalt)
+    (sleep (- (recording_time "dropship04") 960.0))
+    (print "dropship04")
+    (dropshipunloadalt)
+	(sleep 90)
+	(unit_close dropship04)
+    (sleep (recording_time "dropship04"))
+    (object_destroy "dropship04")
+)
+
+(script dormant encounter03
+    (sleep_until (volume_test_objects "encounter03" (players)))
+    (print "encounter03")
+    (if encounter03_test 
+        (sleep -1))
+    (set encounter03_test true)
+    (object_create_anew "encounter03dropshipup")
+    (recording_play "encounter03dropshipup" "encounter03dropshipup")
+    (wake encounter03fallback)
+    (wake moonbasefront)
+    (dropshipload)
+    (sleep (- (recording_time "encounter03dropshipup") 800.0))
+    (dropshipunload)
+	(sleep 90)
+	(unit_close encounter03dropshipup)
+    (sleep (recording_time "encounter03dropshipup"))
+    (object_destroy "encounter03dropshipup")
+)
+
+(script dormant encounter03dropshipup
+    (sleep_until (volume_test_objects "encounter03dropshipup" (players)))
+    (print "encounter03dropshipup")
+    (if encounter03_test 
+        (sleep -1))
+    (set encounter03_test true)
+    (object_create_anew "encounter03dropshipup")
+    (recording_play "encounter03dropshipup" "encounter03dropshipup")
+    (wake encounter03fallback)
+    (wake moonbasefront)
+    (dropshipload)
+    (sleep (- (recording_time "encounter03dropshipup") 800.0))
+    (dropshipunload)
+	(sleep 90)
+	(unit_close encounter03dropshipup)
+    (sleep (recording_time "encounter03dropshipup"))
+    (object_destroy "encounter03dropshipup")
+)
+
+(script dormant dropship01
+    (physics_set_gravity 0.36)
+    (object_create_anew "dropship01")
+	(unit_close dropship01)
+    (recording_play "dropship01" "dropship01")
+    (sleep (recording_time "dropship01"))
+    (object_destroy "dropship01")
+)
+
+(script static void dropship01play
+    (physics_set_gravity 0.36)
+    (wake dropship01)
+    (object_create_anew "dropship02")
+    (object_create_anew "dropship03")
+	(unit_close dropship02)
+	(unit_close dropship03)
+    (recording_play "dropship02" "dropship02")
+    (recording_play "dropship03" "dropship03")
+    (sleep (recording_time "dropship03"))
+    (object_destroy "dropship03")
+)
+
+(script static void record
+    (print "record")
+    (physics_set_gravity 0.36)
+    (object_create_anew "encounter04dropship")
+    (dropship01play)
+)
+(script dormant end_mission
+(sleep_until (= (device_group_get "giantdoor") 1) 0)
+(activate_team_nav_point_flag default player game_end_nav 0)
+(sleep_until (volume_test_objects mission_complete (players)))
+(game_won)
+)
+(script startup elites
+    (physics_set_gravity 0.36)
+    ;(ai_set_orders "elites" "test/test")
+    (device_group_set_immediate "lockeddoors" 0.0)
+    (device_group_set_immediate "1stencounter02" 0.0)
+    (wake fallback)
+    (wake cavegrunts)
+    (wake caveback)
+    (wake encounter03dropship)
+    (wake encounter03dropshipup)
+    (wake encounter03)
+	(wake end_mission)
+    (wake killplayer01)
+    (wake killplayer02)
+    (wake killplayer03)
+    (record)
+)
+
+;(script static void move
+    ;(ai_set_orders "elites" "test/testorder02")
+;)
+
+(script static void cheat
+    (wake 2ndencounter)
+    (volume_teleport_players_not_inside "null" "2ndencounter")
+    (game_save_totally_unsafe)
+)
+
